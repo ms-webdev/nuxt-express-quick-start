@@ -1,0 +1,18 @@
+$primary: #AC1315;
+
+$border-radius:     0;
+$border-radius-lg:  .1rem;
+$border-radius-sm:  0;
+
+
+
+html, body {
+  background-color: #fff;
+  color: #000;
+  letter-spacing: 0.5px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+@import "~bootstrap/scss/bootstrap";

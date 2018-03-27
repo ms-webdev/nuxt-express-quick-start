@@ -1,11 +1,12 @@
 # Quick Starter Nuxt.js & Express.js
-Dieses Template ist eine Erweiterung von nuxt-community/express-template
+Dieses Template ist eine Erweiterung von [nuxt-community/express-template](https://github.com/nuxt-community/express-template)
 und dient zum schnellen Start einer serverfähigen Anwendung.
 Folgende Element wurden erweitert:
- * Switch für Port-Änderung
- * PM2 Steuerung 
+ * Anleitung für Port-Änderung (process.env)
+ * PM2 Steuerung / Server Monitoring
  * Sass Loader
- * Bootstrap 4 / Bootstrap Vue
+ * Bootstrap 4 (css) / Bootstrap Vue (components)
+ * Font-Icons (Fontawesome 4)
  * Purgecss 
  
  Leitfaden für Servereinstellungen:
@@ -18,7 +19,7 @@ Einstellungen speziell für Laravel Forge:
 ## Quick Start
  * Repository herunterladen
  * npm install
- * Port anpassen
+ * Port anpassen (Production)
  * Host einrichten (Forge)
  * NGINX anpassen (Forge)
  * Deploy (Forge)
@@ -26,14 +27,14 @@ Einstellungen speziell für Laravel Forge:
 
 ## Step by Step
 Folgende Anleitung beschreibt alle Arbeitschritte vom Ausgangs-Template.
-
-### express-template 
-
+### express-template & setup
+[vue-cli](https://github.com/vuejs/vue-cli) sollte installiert sein.
 
 ``` bash
 # nuxt-community/express-template
 vue init nuxt-community/express-template <project-name>
-# move to your project
+
+# Projektordner wählen
 cd <project-name> 
 
 # install packages
@@ -42,21 +43,35 @@ npm install
 # install sass-loader
 npm install sass-loader node-sass --save-dev
 
-# install bootstrap-vue
-npm install bootstrap-vue
-
-# install bootstrap (latest version) 
-npm install bootstrap
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm start
+# install bootstrap (latest version) + bootstrap-vue
+npm install bootstrap bootstrap-vue
 ```
+### eslint setup
+Alle eslint packages und Einstellungen (.eslintrc)
+wurden vom [startet template](https://github.com/nuxt-community/starter-template) kopiert und ausgetauscht.
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
-## Backpack
-
-We use [backpack](https://github.com/palmerhq/backpack) to watch and build the application, so you can use the latest ES6 features (module syntax, async/await, etc.).
+### Bootstrap & CSS/SASS konfigurieren (nuxt.config.js)
+ * Bootstrap-Vue initialisieren (css: false)
+ * Bootstrap 4 CSS Einstellungen 
+ * 
+ 
+ ### Purge CSS & Inline einbinden
+ Installiert werden muss das [purgecss-webpack-plugin](https://github.com/FullHuman/purgecss-webpack-plugin),
+ zusätzlich wird das package [glob-all](https://github.com/jpillora/node-glob-all) benötigt.
+  * Nuxt so einstellen dass CSS extern über ein Stylesheet anstatt Inline eingebunden wird: extractCSS: true
+  * PurgeCSS als Plugin laden
+  * Bereinigtes CSS wieder inline einfügen (FEHLT NOCH!!!) 
+ 
+ 
+ ### Production Build & Start
+ Bevor die App als Production gestartet wird muss das Build erzeugt werden, wenn nicht dann wird vie 'npm start' das Dev-Build genutzt!!!
+ ``` bash
+ # erzeuge build
+ npm run build
+ 
+ # starte Server
+ npm start
+ ```
+ 
+ 
+ 
