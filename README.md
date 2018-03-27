@@ -7,7 +7,13 @@ Folgende Element wurden erweitert:
  * Sass Loader
  * Bootstrap 4 (css) / Bootstrap Vue (components)
  * Font-Icons (Fontawesome 4)
- * Purgecss 
+ * Purgecss
+ * Manifest.json mit Grundeinstellungen (PWA)
+ 
+ Downtime vermeiden
+  * Deploy ohne Downtime
+  * npm start bzw. pm2 restart vermeiden
+  * Build ggf. auslagern, erst nach Fertigstellung in .nuxt kopieren (?)
  
  Leitfaden für Servereinstellungen:
   * NGINX Routing auf Express

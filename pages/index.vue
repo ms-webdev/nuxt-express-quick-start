@@ -1,6 +1,7 @@
 <template>
     <section class="container">
         <h1 class="title">
+            <i class="fa fa-user"></i>
             USERS
         </h1>
         <ul class="users">

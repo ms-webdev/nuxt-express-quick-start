@@ -31,7 +31,7 @@ module.exports = {
         // { src: '@/assets/css/fort-awesome/css/external.css', lang: 'css' },
         // { src: 'github-markdown-css/github-markdown.css', lang: 'css' },
         // { src: '@/assets/css/style.css', lang: 'css' },
-        // { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' },
+        { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' },
     ],
     /*
     ** Add axios globally
