@@ -1,6 +1,8 @@
 # Quick Starter Nuxt.js & Express.js
 Dieses Template ist eine Erweiterung von [nuxt-community/express-template](https://github.com/nuxt-community/express-template)
-und dient zum schnellen Start einer serverfähigen Anwendung.
+und dient zum schnellen Start einer serverfähigen Anwendung. Zusätzliche Einstellungen und Packages dienen als soliden Grundeinstieg für Projekte
+auch im Hinblick auf SEO-Performance.
+
 Folgende Element wurden erweitert:
  * Anleitung für Port-Änderung (process.env)
  * PM2 Steuerung / Server Monitoring
@@ -9,6 +11,7 @@ Folgende Element wurden erweitert:
  * Font-Icons (Fontawesome 4)
  * Purgecss
  * Manifest.json mit Grundeinstellungen (PWA)
+ * SEO-Check via lighthouse
  
  Downtime vermeiden
   * Deploy ohne Downtime
@@ -54,7 +57,7 @@ npm install bootstrap bootstrap-vue
 ```
 ### eslint setup
 Alle eslint packages und Einstellungen (.eslintrc)
-wurden vom [startet template](https://github.com/nuxt-community/starter-template) kopiert und ausgetauscht.
+wurden vom [starter template](https://github.com/nuxt-community/starter-template) kopiert und ausgetauscht.
 
 ### Bootstrap & CSS/SASS konfigurieren (nuxt.config.js)
  * Bootstrap-Vue initialisieren (css: false)
