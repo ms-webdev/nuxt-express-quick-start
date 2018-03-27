@@ -28,12 +28,25 @@ Einstellungen speziell für Laravel Forge:
 Folgende Anleitung beschreibt alle Arbeitschritte vom Ausgangs-Template.
 
 ### express-template 
- 
 
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
+# nuxt-community/express-template
+vue init nuxt-community/express-template <project-name>
+# move to your project
+cd <project-name> 
+
+# install packages
+npm install
+
+# install sass-loader
+npm install sass-loader node-sass --save-dev
+
+# install bootstrap-vue
+npm install bootstrap-vue
+
+# install bootstrap (latest version) 
+npm install bootstrap
 
 # serve with hot reload at localhost:3000
 $ npm run dev
