@@ -1,8 +1,35 @@
-# nuxt-express-quick-start
+# Quick Starter Nuxt.js & Express.js
+Dieses Template ist eine Erweiterung von nuxt-community/express-template
+und dient zum schnellen Start einer serverfähigen Anwendung.
+Folgende Element wurden erweitert:
+ * Switch für Port-Änderung
+ * PM2 Steuerung 
+ * Sass Loader
+ * Bootstrap 4 / Bootstrap Vue
+ * Purgecss 
+ 
+ Leitfaden für Servereinstellungen:
+  * NGINX Routing auf Express
+  * NGINX: Wartungsseite (502 abfangen)
+  
+Einstellungen speziell für Laravel Forge:
+ * Deploy-Script anpassen 
 
-> Nuxt.js project
+## Quick Start
+ * Repository herunterladen
+ * npm install
+ * Port anpassen
+ * Host einrichten (Forge)
+ * NGINX anpassen (Forge)
+ * Deploy (Forge)
+ * Deploy Script anpassen (Forge)
 
-## Build Setup
+## Step by Step
+Folgende Anleitung beschreibt alle Arbeitschritte vom Ausgangs-Template.
+
+### express-template 
+ 
+
 
 ``` bash
 # install dependencies
