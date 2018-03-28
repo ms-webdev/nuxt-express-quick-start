@@ -1,7 +1,7 @@
 # Quick Starter Nuxt.js & Express.js
 Dieses Template ist eine Erweiterung von [nuxt-community/express-template](https://github.com/nuxt-community/express-template)
 und dient zum schnellen Start einer serverfähigen Anwendung. Zusätzliche Einstellungen und Packages dienen als soliden Grundeinstieg für Projekte
-auch im Hinblick auf SEO-Performance.
+auch im Hinblick der SEO-Performance.
 
 Folgende Element wurden erweitert:
  * Anleitung für Port-Änderung (process.env)
@@ -9,7 +9,7 @@ Folgende Element wurden erweitert:
  * Sass Loader
  * Bootstrap 4 (css) / Bootstrap Vue (components)
  * Font-Icons (Fontawesome 4)
- * Purgecss
+ * Purgecss (inline)
  * Manifest.json mit Grundeinstellungen (PWA)
  * SEO-Check via lighthouse
  

@@ -1,6 +1,6 @@
 <template>
     <section class="container">
-        <h1 class="title">
+        <h1 class="title mt-3">
             <i class="fa fa-user"></i>
             USERS
         </h1>

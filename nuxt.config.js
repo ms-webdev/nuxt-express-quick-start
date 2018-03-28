@@ -28,9 +28,6 @@ module.exports = {
     */
     css: [
         {src: '~/assets/css/main.scss', lang: 'scss'},
-        // { src: '@/assets/css/fort-awesome/css/external.css', lang: 'css' },
-        // { src: 'github-markdown-css/github-markdown.css', lang: 'css' },
-        // { src: '@/assets/css/style.css', lang: 'css' },
         { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' },
     ],
     /*
@@ -39,9 +36,7 @@ module.exports = {
     build: {
         extractCSS: true,
         vendor: ['axios'],
-        /*
-        ** Run ESLINT on save
-        */
+
         extend(config, ctx) {
 
             config.plugins.push(
@@ -55,7 +50,6 @@ module.exports = {
                 })
             );
 
-
             if (ctx.isClient) {
                 config.module.rules.push({
                     enforce: 'pre',
@@ -65,7 +59,5 @@ module.exports = {
                 });
             }
         }
-
-
     }
 }
